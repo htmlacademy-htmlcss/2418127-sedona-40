@@ -2,7 +2,7 @@
 
 * Студент: [Дарья Емельянова](https://up.htmlacademy.ru/htmlcss/40/user/2418127).
 * Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
-
+* Сайт: [Мой проект Седона](https://dariafrast666.github.io/2418127-sedona-40/)
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
