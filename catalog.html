@@ -12,7 +12,7 @@
         </a>
         <ul class="navigation_list">
           <li class="navigation_item">
-            <a class="navigation_link" href="#">
+            <a class="navigation_link" href="index.html">
               Главная
             </a>
           </li>
@@ -22,7 +22,7 @@
             </a>
           </li>
           <li class="navigation_item">
-            <a class="navigation_link" href="#">
+            <a class="navigation_link navigation_link_current" href="catalog.html">
               Гостиницы
             </a>
           </li>
@@ -39,15 +39,13 @@
           <li class="user_item">
             <a class="user_link favorite_hotel" href="#">
               <span class="visually_hidden">
-              Отелей, добавленных в избранное <b>12</b>
+              Отелей в избранном <b class="count">12</b>
             </span>
             </a>
           </li>
           <li class="user_item">
-            <a class="user_link" href="catalog.html">
-              <span class="visually_hidden">
-              Заказать звонок
-            </span>
+            <a class="user_link" href="#">
+              Хочу сюда!
             </a>
           </li>
         </ul>
@@ -59,14 +57,14 @@
         <h1 class="inner_header_title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs_item">
-            <a class="breadcrumbs_link">
+            <a class="breadcrumbs_link" href="index.html">
               <span class="visually_hidden">
                 Главная
               </span>
             </a>
           </li>
           <li class="breadcrumbs_item">
-            <a class="breadcrumbs_link">
+            <a class="breadcrumbs_link" href="#">
                 Гостиницы
             </a>
           </li>
@@ -103,17 +101,17 @@
           </legend>
 
               <label class="control">
-                <input class="control_input" type="radio" name="type_of_hotel" checked>
+                <input class="control_input" type="radio" name="type_of_hotel" value="hotel" checked>
                 Гостиница
               </label>
 
               <label class="control">
-                <input class="control_input" type="radio" name="type_of_hotel">
+                <input class="control_input" type="radio" name="type_of_hotel" value="motel">
                  Мотель
               </label>
 
               <label class="control">
-                <input class="control_input" type="radio" name="type_of_hotel">
+                <input class="control_input" type="radio" name="type_of_hotel" value="apartments">
                 Апартаменты
               </label>
         </fieldset>
@@ -123,10 +121,10 @@
             Стоимость, ₽:
           </legend>
             <label class="cost_from"> от
-              <input type="text" name="from" value="0">
+              <input type="number" name="from" value="0">
             </label>
             <label class="cost_to"> до
-              <input type="text" name="to" value="9000">
+              <input type="number" name="to" value="9000">
             </label>
             <p class="visually_hidden">Слайдер для выбора стоимости</p>
 
@@ -152,17 +150,17 @@
 
       <ul class="view_list">
         <li class="view_item">
-          <a class="view_button cards_view" href="#">
+          <a class="view_button cards_view" href="catalog.html?view=tile">
             <span class="visually_hidden">Показать карточки</span>
           </a>
         </li>
         <li class="view_item">
-          <a class="view_button one_card_view" href="#">
+          <a class="view_button one_card_view" href="catalog.html?view=card">
             <span class="visually_hidden">Показать по одной карточке</span>
           </a>
         </li>
         <li class="view_item">
-          <a class="view_button list_view" href="#">
+          <a class="view_button list_view" href="catalog.html?view=list">
             <span class="visually_hidden">Показать список</span>
           </a>
         </li>
@@ -257,14 +255,14 @@
             <a class="pagination-link" href="#">10</a>
           </li>
         </ul>
-        <button class="button pagination-show-more" type="button">Показать ещё</button>
+
 
         <div class="subscribe">
           <h2 class="subscribe_title">Подпишитесь на рассылку</h2>
           <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="subscribe_form" action="https://echo.htmlacademy.ru/" method="post">
             <label>
-              Ваш e-mail <input type="email" placeholder="Ваш e-mail">
+              Ваш e-mail <input type="email" placeholder="Ваш e-mail" name="email" required>
             </label>
             <button class="button" type="submit">Подписаться</button>
           </form>
