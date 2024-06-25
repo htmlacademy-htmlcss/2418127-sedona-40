@@ -3,8 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
+    <div class="page_container">
     <header class="main_header">
       <nav class="navigation">
         <a class="main_logo" href="index.html">
@@ -39,12 +41,13 @@
           <li class="user_item">
             <a class="user_link favorite_hotel" href="#">
               <span class="visually_hidden">
-              Отелей в избранном <b class="count">12</b>
-            </span>
+              Отелей в избранном
+              </span>
+              <span class="count">12</span>
             </a>
           </li>
           <li class="user_item">
-            <a class="user_link" href="#">
+            <a class="user_link_button button" href="#">
               Хочу сюда!
             </a>
           </li>
@@ -70,10 +73,6 @@
           </li>
         </ul>
 
-
-      <h2 class="visually_hidden">
-        Список гостиниц с фильтрами
-      </h2>
       <form class="catalog_filter" action="https://echo.htmlacademy.ru/" method="get">
         <fieldset class="catalog_filter_group">
           <legend class="catalog_filter_title">
@@ -121,10 +120,10 @@
             Стоимость, ₽:
           </legend>
             <label class="cost_from"> от
-              <input type="number" name="from" value="0">
+              <input type="number" name="from" value="0" placeholder="от">
             </label>
             <label class="cost_to"> до
-              <input type="number" name="to" value="9000">
+              <input type="number" name="to" value="9000" placeholder="до">
             </label>
             <p class="visually_hidden">Слайдер для выбора стоимости</p>
 
@@ -258,20 +257,17 @@
             <a class="pagination-link" href="#">10</a>
           </li>
         </ul>
-
-
-        <div class="subscribe">
-          <h2 class="subscribe_title">Подпишитесь на рассылку</h2>
-          <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-          <form class="subscribe_form" action="https://echo.htmlacademy.ru/" method="post">
-            <label>
-              Ваш e-mail <input type="email" placeholder="Ваш e-mail" name="email" required>
-            </label>
-            <button class="button" type="submit">Подписаться</button>
-          </form>
-        </div>
-
-
+    </section>
+    <section class="subscribe">
+      <h2 class="subscribe_title">Подпишитесь на рассылку</h2>
+      <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <form class="subscribe_form" action="https://echo.htmlacademy.ru/" method="post">
+        <label for="subscribe_id" class="visually_hidden">
+          Ваш e-mail
+        </label>
+        <input type="email" name="email" placeholder="Ваш e-mail" id="subscribe_id" required>
+        <button class="subscribe_button" type="submit">Подписаться</button>
+      </form>
     </section>
     </main>
 
@@ -283,17 +279,17 @@
         </h2>
         <ul>
           <li class="footer_social_item">
-            <a class="button" href="#">
+            <a class="button_social" href="#">
               <span class="visually_hidden">Вконтакте</span>
             </a>
           </li>
           <li class="footer_social_item">
-            <a class="button" href="#">
+            <a class="button_social" href="#">
               <span class="visually_hidden">Telegram</span>
             </a>
           </li>
           <li class="footer_social_item">
-            <a class="button" href="#">
+            <a class="button_social" href="#">
               <span class="visually_hidden">Youtube</span>
             </a>
           </li>
@@ -302,16 +298,15 @@
 
       <section class="footer-contacts">
         <h2 class="visually_hidden">
-          Телефон
+          Контакты
         </h2>
         <a class="footer_contacts_phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
       </section>
 
-      <div class="developer_logo">
         <a class="developer_logo_link" href="https://htmlacademy.ru/study">
           <img src="images/develop_logo.svg" width="115" height="33" alt="логотип">
         </a>
-      </div>
 
     </footer>
+    </div>
   </body>
