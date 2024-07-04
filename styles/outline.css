@@ -1,0 +1,35 @@
+body {
+  outline: 5px solid red;
+  outline-offset: -5px;
+}
+
+.page_container {
+  outline: 5px solid green;
+  outline-offset: -5px;
+}
+
+.main_header {
+  outline: 5px solid red;
+  outline-offset: -5px;
+}
+
+.navigation {
+  outline: 5px solid yellow;
+  outline-offset: -5px;
+}
+
+.navigation_list {
+  outline: 5px solid green;
+  outline-offset: -5px;
+}
+
+.navigation_user {
+  outline: 5px solid green;
+  outline-offset: -5px;
+
+}
+
+.advantages_list {
+  outline: 5px solid purple;
+  outline-offset: -5px;
+}

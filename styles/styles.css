@@ -18,6 +18,9 @@
 .page_container {
   width: 1200px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 body {
@@ -26,6 +29,9 @@ body {
   line-height: 26px;
   background-color: #fff;
   color: #333333;
+  margin: 0;
+  height: 100%;
+
 }
 
 .main_header {
@@ -50,7 +56,6 @@ body {
 background-color: lightblue;
 background-image: url("../images/hero_mountains.jpg");
 background-size: cover;
-text-align: center;
 }
 
 .advantages h2 {
@@ -288,4 +293,76 @@ text-align: center;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
+}
+
+html {
+  height: 100%;
+}
+
+.main_container {
+  flex-grow: 1;
+}
+
+.navigation {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.navigation_list {
+  margin: 0;
+  padding: 0;
+  max-width: 480px;
+}
+
+.navigation_user {
+  margin: 0;
+  padding: 0;
+  max-width: 300px;
+  margin-left: auto;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+}
+
+.main_logo {
+  margin: 0;
+  padding: 0;
+  margin-right: 30px;
+}
+
+.advantages_list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.services_list {
+  display: flex;
+}
+
+.page_footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.catalog_header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.hotel_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-around;
+  width: 400px;
 }
