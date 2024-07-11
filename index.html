@@ -5,7 +5,7 @@
     <title>HTML Academy: Седона</title>
 
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/outline.css">
+    <!--<link rel="stylesheet" href="styles/outline.css">-->
   </head>
   <body>
     <div class="page_container">
@@ -30,6 +30,8 @@
               Гостиницы
             </a>
           </li>
+
+
         </ul>
 
         <ul class="navigation_user">
@@ -64,13 +66,17 @@
       </section>
 
       <section class="advantages">
+        <div class="advantages_conteiner">
         <h2>Седона — небольшой городок в Аризоне,
           заслуживающий большего!</h2>
         <p class="reasons">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        </div>
         <ul class="advantages_list">
           <li class="advantages_item advantages_item_blue">
-            <h3 class="advantages_title">Настоящий городок</h3>
-            <p class="advantages_description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            <div class="item_container">
+              <h3 class="advantages_title">Настоящий городок</h3>
+              <p class="advantages_description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            </div>
             <img src="images/gallery/gallery_1.jpg" width="800" height="385" alt="Уютный городок на фоне гор">
           </li>
           <li class="advantages_item advantages_item_light">
@@ -86,8 +92,10 @@
             <p class="advantages_description">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
           <li class="advantages_item advantages_item_blue">
-            <h3 class="advantages_title">Там есть мост дьявола</h3>
-            <p class="advantages_description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            <div class="item_container">
+              <h3 class="advantages_title">Там есть мост дьявола</h3>
+              <p class="advantages_description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            </div>
             <img src="images/gallery/gallery_2.jpg" width="800" height="385" alt="Мост дьявола">
           </li>
         </ul>
@@ -95,10 +103,12 @@
 
 
       <section class="services">
+          <div class="services_container">
             <h2 class="services_main_title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
             <p class="services_main_description">Опытный персонал и качественное обслуживание!</p>
+          </div>
             <ul class="services_list">
-              <li class="services_item">
+              <li class="services_item advantages_item_light">
                 <h3 class="services_title">Жильё</h3>
                 <p class="services_description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
               </li>
@@ -106,8 +116,8 @@
                 <h3 class="services_title">Еда</h3>
                 <p class="services_description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
               </li>
-              <li class="services_item">
-                <h3 class="services_title">Сувениры</h3>
+              <li class="services_item advantages_item_light">
+                <h3 class="services_title ">Сувениры</h3>
                 <p class="services_description">Не только китайского, но и настоящего местного производства!</p>
               </li>
             </ul>

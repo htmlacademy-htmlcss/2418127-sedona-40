@@ -13,10 +13,10 @@ body {
   outline-offset: -5px;
 }
 
-.navigation {
+/**.navigation {
   outline: 5px solid yellow;
   outline-offset: -5px;
-}
+}**/
 
 .navigation_list {
   outline: 5px solid green;
@@ -24,12 +24,22 @@ body {
 }
 
 .navigation_user {
-  outline: 5px solid green;
+  outline: 5px solid rgb(19, 0, 128);
   outline-offset: -5px;
 
 }
 
 .advantages_list {
+  outline: 5px solid purple;
+  outline-offset: -5px;
+}
+
+.footer_social {
+  outline: 5px solid purple;
+  outline-offset: -5px;
+}
+
+.view_list {
   outline: 5px solid purple;
   outline-offset: -5px;
 }
