@@ -256,6 +256,7 @@ padding-bottom: 82px;
   line-height: 28px;
 
   color: #000000;
+  margin: 0;
 }
 
 .hotel_card_link {
@@ -371,7 +372,6 @@ html {
   padding: 0;
   margin-right: 30px;
   margin-bottom: -6px;
-  z-index: 1;
 }
 
 .advantages_list {
@@ -406,9 +406,9 @@ html {
 
 /** карточки на флексах **/
 .hotel_list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+  display: grid;
+  grid-template-columns: 340px 340px 340px;
+  gap: 20px;
   margin: 0;
   padding: 0;
 
@@ -519,21 +519,17 @@ padding: 22px 12px;
   justify-content: flex-end;
 }
 
-/** карточки на флексах **/
 
 .hotel_card {
   border: 1px #E6E6E6 solid;
-  width: 340px;
   list-style-type: none;
   padding: 20px;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 140px 140px;
+  grid-row-gap: 16px;
+  grid-column-gap: 20px;
 }
 
-.hotel_card:nth-child(3n) {
-  margin-right: 0;
-}
 
 .catalog {
   margin-right: 70px;
@@ -543,4 +539,48 @@ padding: 22px 12px;
 .view_list {
   display: flex;
   list-style-type: none;
+}
+
+/***Карточки на гридах*/
+
+.hotel_card_link_image {
+  grid-column: 1 / 2;
+
+}
+
+.hotel_card_link_title {
+  grid-column: 1 / -1;
+}
+
+.hotel_card_type_hotel {
+  grid-column: 1;
+  margin: 0;
+
+}
+
+.hotel_card_price {
+  grid-column: 2;
+  margin: 0;
+  justify-self: end;
+}
+
+.hotel_card_button {
+  grid-column: 1;
+}
+
+.favorite {
+  grid-column: 2;
+}
+
+.stars {
+  grid-column: 1;
+}
+
+.hotel_card_rate {
+  grid-column: 2;
+  margin: 0;
+}
+
+.hotel_card_image {
+  object-fit: contain;
 }
