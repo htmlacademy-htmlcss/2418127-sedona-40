@@ -1079,7 +1079,7 @@ box-sizing: border-box;
   width: 288px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 44px;
+  margin-bottom: 36px;
 }
 
 .range_input {
