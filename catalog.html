@@ -8,7 +8,7 @@
   </head>
   <body>
     <div class="page_container">
-    <header class="main_header">
+    <header data-test="header" class="main_header">
       <nav class="navigation">
         <a class="main_logo" href="index.html">
           <img class="main_logo_image" src="images/logo_sedona.svg" width="140" height="70" alt="Логотип сайта Седона">
@@ -48,7 +48,7 @@
             </a>
           </li>
           <li class="user_item">
-            <a class="user_link_button button" href="#">
+            <a class="user_link_button button button_brown" href="#">
               Хочу сюда!
             </a>
           </li>
@@ -56,7 +56,7 @@
       </nav>
     </header>
 
-    <main class="main_inner">
+    <main data-test="main" class="main_inner">
       <div class="inner_header">
         <h1 class="inner_header_title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
@@ -68,13 +68,13 @@
             </a>
           </li>
           <li class="breadcrumbs_item">
-            <a class="breadcrumbs_link" href="#">
+            <a class="breadcrumbs_link">
                 Гостиницы
             </a>
           </li>
         </ul>
 
-      <form class="catalog_filter" action="https://echo.htmlacademy.ru/" method="get">
+      <form data-test="filter" class="catalog_filter" action="https://echo.htmlacademy.ru/" method="get">
         <fieldset class="catalog_filter_group">
           <legend class="catalog_filter_title">
             Инфраструктура:
@@ -97,7 +97,7 @@
 
         <fieldset class="catalog_filter_group">
           <legend class="catalog_filter_title">
-            Тип жилья:
+            Тип Жилья:
           </legend>
 
               <label class="control">
@@ -149,14 +149,14 @@
         </fieldset>
 
         <div class="button_conteiner">
-          <button class="button submit_button" type="submit">Применить</button>
-          <button class="button reset_button" type="reset">Сбросить</button>
+          <button class="button submit_button button_blue" type="submit">Применить</button>
+          <button class="button reset_button button_transparent" type="reset">Сбросить</button>
         </div>
       </form>
 </div>
 
 
-  <section class="catalog">
+  <section data-test="catalog" class="catalog">
     <header class="catalog_header">
       <h2 class="count_hotels">
         Найдено гостиниц: 38
@@ -198,8 +198,8 @@
           </a>
           <p class="hotel_card_type_hotel">Гостиница</p>
           <p class="hotel_card_price">От 4000 ₽</p>
-          <a class="hotel_card_button button" href="#">подробнее</a>
-          <button class="button favorite" type="button">в избранное</button>
+          <a class="hotel_card_button button button_brown" href="#">подробнее</a>
+          <button class="button favorite button_blue" type="button">в избранное</button>
           <p class="stars four_stars">
             <span class="visually_hidden">Четыре звезды</span>
           </p>
@@ -215,8 +215,8 @@
           </a>
           <p class="hotel_card_type_hotel">Гостиница</p>
           <p class="hotel_card_price">От 5000 ₽</p>
-          <a class="hotel_card_button button" href="#">подробнее</a>
-          <button class="button favorite" type="button">в избранное</button>
+          <a class="hotel_card_button button button_brown" href="#">подробнее</a>
+          <button class="button_green button favorite" type="button">в избранном</button>
           <p class="stars four_stars">
             <span class="visually_hidden">Четыре звезды</span>
           </p>
@@ -232,8 +232,8 @@
           </a>
           <p class="hotel_card_type_hotel">Гостиница</p>
           <p class="hotel_card_price">От 2500 ₽</p>
-          <a class="hotel_card_button button" href="#">подробнее</a>
-          <button class="button favorite" type="button">в избранное</button>
+          <a class="hotel_card_button button button_brown" href="#">подробнее</a>
+          <button class="button favorite button_blue" type="button">в избранное</button>
           <p class="stars three_stars">
             <span class="visually_hidden">Три звезды</span>
           </p>
@@ -249,8 +249,8 @@
           </a>
           <p class="hotel_card_type_hotel">Гостиница</p>
           <p class="hotel_card_price">От 1500 ₽</p>
-          <a class="hotel_card_button button" href="#">подробнее</a>
-          <button class="button favorite" type="button">в избранное</button>
+          <a class="hotel_card_button button button_brown" href="#">подробнее</a>
+          <button class="button favorite button_blue" type="button">в избранное</button>
           <p class="stars two_stars">
             <span class="visually_hidden">Две звезды</span>
           </p>
@@ -273,14 +273,14 @@
             <a class="pagination-link" href="#">4</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link pagination_dots" href="#">...</a>
+            <a class="pagination_dots" href="#">...</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">10</a>
           </li>
         </ul>
     </section>
-    <section class="subscribe">
+    <section data-test="subscribe" class="subscribe">
       <h2 class="subscribe_title">Подпишитесь на рассылку</h2>
       <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form class="subscribe_form" action="https://echo.htmlacademy.ru/" method="post">
@@ -288,13 +288,13 @@
           Ваш e-mail
         </label>
         <input class="subscribe_input" type="email" name="email" placeholder="Ваш e-mail" id="subscribe_id" required>
-        <button class="subscribe_button" type="submit">Подписаться</button>
+        <button class="subscribe_button button_blue" type="submit">Подписаться</button>
       </form>
     </section>
     </main>
 
 
-    <footer class="page_footer">
+    <footer data-test="footer" class="page_footer">
       <section class="footer_social">
         <h2 class="visually_hidden">
           Социальные сети
