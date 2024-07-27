@@ -262,7 +262,10 @@ padding-bottom: 82px;
 }
 
 .inner_header {
-  background:  #5F9EA0 url("../images/filter.jpg") no-repeat;
+  background-color:  #5F9EA0;
+  background-image:  url("../images/filter.jpg");
+  background-repeat:  no-repeat;
+  background-size: cover;
   color: #FFFFFF;
   min-height: 412px;
   padding: 35px 70px 70px;
@@ -288,6 +291,10 @@ padding-bottom: 82px;
   font-family: inherit;
   font-size: 18px;
   display: flex;
+}
+
+.control:not(:last-child) {
+  margin-bottom: 14px;
 }
 
 .control:hover {
@@ -678,12 +685,10 @@ box-sizing: border-box;
   padding: 0;
   margin-top: 45px;
   margin-bottom: 35px;
+  max-width: 150px;
+  align-items: baseline;
 }
 
-.footer-contacts {
-  margin-top: 45px;
-  margin-bottom: 35px;
-}
 
 .breadcrumbs {
   display: flex;
@@ -704,7 +709,6 @@ box-sizing: border-box;
   flex-direction: column;
   border: none;
   padding: 0;
-  justify-content: space-between;
   margin: 0;
 }
 
@@ -728,7 +732,7 @@ box-sizing: border-box;
 .button_conteiner {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  padding-top: 56px;
 }
 
 .catalog_filter_title {
@@ -1024,7 +1028,7 @@ box-sizing: border-box;
 .range_scale {
   position: relative;
   height: 4px;
-  margin-top: 16px;
+  margin-top: 10px;
   background-color: rgba(255, 255, 255, 0.3);
   width: 288px;
 }
@@ -1160,6 +1164,7 @@ box-sizing: border-box;
 .input_container {
   display: flex;
   flex-direction: column;
+  max-width: 440px;
 }
 
 .date_label_container {
@@ -1205,6 +1210,7 @@ box-sizing: border-box;
   margin-top: 4px;
   margin-bottom: 0;
   padding-left: 20px;
+
 }
 
 .error {
@@ -1431,7 +1437,7 @@ box-sizing: border-box;
 
 .control_input_square[type="checkbox"]:checked {
   content: "";
-  background-image: url(../images/checkbox.svg);
+  background-image: url("../images/checkbox.svg");
 }
 
 .control_input_circle[type="radio"]:checked {
@@ -1451,10 +1457,6 @@ box-sizing: border-box;
 
 .breadcrumbs_item:not(:last-child) .breadcrumbs_link:active {
   opacity: 0.2;
-}
-
-.breadcrumbs_link:focus {
-  outline: none;
 }
 
 
