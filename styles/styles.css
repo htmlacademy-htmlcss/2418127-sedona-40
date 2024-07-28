@@ -1385,7 +1385,7 @@ box-sizing: border-box;
 }
 
 .tooltip_text:after {
-  content:'';
+  content: "";
   background-image: url("../images/tooltip_triangle.svg");
   width: 19px;
   height: 9px;
